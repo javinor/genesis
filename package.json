@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "starter project",
   "scripts": {
-    "pretest": "eslint src/**.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/**.js",
+    "test": "npm run lint"
   },
   "author": "javinor",
   "repository": "https://github.com/javinor/genesis",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^0.15.2",
     "eslint": "^3.1.1",
     "eslint-config-standard": "^5.3.5",
     "eslint-plugin-promise": "^2.0.0",
