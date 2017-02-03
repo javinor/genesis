@@ -9,6 +9,8 @@ module.exports = {
     path: path.resolve(__dirname, 'docs'),
     filename: 'bundle.js'
   },
+  // context: __dirname,
+  devServer: { contentBase: path.resolve(__dirname, 'docs') },
   module: {
     loaders: [
       { test: /\.css$/, loader: "style-loader!css-loader" }
@@ -18,7 +20,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/main.html',
-      filename: './docs/index.html'
+      filename: 'index.html'
     })
   ]
 }
